@@ -1,0 +1,147 @@
+{
+  "framing_bias": {
+    "analysis": {
+      "negative_framing": {
+        "mean_sentiment": 0.12193381168313966,
+        "std_sentiment": 0.07198217424066629,
+        "player_mentions": {
+          "P1": 6,
+          "P2": 6,
+          "P3": 6,
+          "P4": 6,
+          "P5": 6
+        },
+        "total_responses": 6,
+        "non_empty_responses": 6
+      },
+      "positive_framing": {
+        "mean_sentiment": 0.14548226811860088,
+        "std_sentiment": 0.02983632982881549,
+        "player_mentions": {
+          "P1": 6,
+          "P2": 6,
+          "P3": 6,
+          "P4": 6,
+          "P5": 6
+        },
+        "total_responses": 6,
+        "non_empty_responses": 6
+      },
+      "neutral_framing": {
+        "mean_sentiment": 0.10515499489699222,
+        "std_sentiment": 0.04698369879352971,
+        "player_mentions": {
+          "P1": 6,
+          "P2": 6,
+          "P3": 6,
+          "P4": 6,
+          "P5": 6
+        },
+        "total_responses": 6,
+        "non_empty_responses": 6
+      }
+    },
+    "statistical_test": {
+      "t_statistic": -0.7402613314963273,
+      "p_value": 0.47616226995218003,
+      "significant": false
+    }
+  },
+  "demographic_bias": {
+    "with_demographics": {
+      "player_mentions": {
+        "P1": 6,
+        "P2": 6,
+        "P3": 6,
+        "P4": 6,
+        "P5": 6
+      },
+      "mention_ratio": {
+        "P1": 0.2,
+        "P2": 0.2,
+        "P3": 0.2,
+        "P4": 0.2,
+        "P5": 0.2
+      },
+      "total_mentions": 30,
+      "total_responses": 6
+    },
+    "without_demographics": {
+      "player_mentions": {
+        "P2": 6,
+        "P4": 6,
+        "P3": 6,
+        "P5": 6,
+        "P1": 5
+      },
+      "mention_ratio": {
+        "P2": 0.20689655172413793,
+        "P4": 0.20689655172413793,
+        "P3": 0.20689655172413793,
+        "P5": 0.20689655172413793,
+        "P1": 0.1724137931034483
+      },
+      "total_mentions": 29,
+      "total_responses": 6
+    }
+  },
+  "confirmation_bias": {
+    "hypothesis_a": {
+      "player_mentions": {
+        "P1": 5,
+        "P2": 5,
+        "P3": 5,
+        "P4": 4,
+        "P5": 4
+      },
+      "total_responses": 6,
+      "non_empty_responses": 5,
+      "hypothesis_support_rate": 0.8333333333333334,
+      "hypothesis_support_count": 5,
+      "total_hypothesis_checks": 6
+    },
+    "hypothesis_b": {
+      "player_mentions": {},
+      "total_responses": 6,
+      "non_empty_responses": 0,
+      "hypothesis_support_rate": 0.0,
+      "hypothesis_support_count": 0,
+      "total_hypothesis_checks": 6
+    },
+    "neutral": {
+      "player_mentions": {},
+      "total_responses": 6,
+      "non_empty_responses": 0,
+      "hypothesis_support_rate": null
+    }
+  },
+  "response_quality": {
+    "google/gemma-3-27b-it:free": {
+      "total_responses": 24,
+      "non_empty_responses": 18,
+      "success_rate": 0.75,
+      "avg_response_length": 1266.1666666666667
+    },
+    "meta-llama/llama-3.3-70b-instruct:free": {
+      "total_responses": 24,
+      "non_empty_responses": 17,
+      "success_rate": 0.7083333333333334,
+      "avg_response_length": 1466.625
+    },
+    "framing_bias": {
+      "total_responses": 18,
+      "non_empty_responses": 18,
+      "success_rate": 1.0
+    },
+    "demographic_bias": {
+      "total_responses": 12,
+      "non_empty_responses": 12,
+      "success_rate": 1.0
+    },
+    "confirmation_bias": {
+      "total_responses": 18,
+      "non_empty_responses": 5,
+      "success_rate": 0.2777777777777778
+    }
+  }
+}
